@@ -284,14 +284,24 @@ body {
     gap: 1rem;
     max-width: 600px;
     margin: 2rem auto;
+    justify-content: space-between; /* Esto separará los elementos */
+    align-items: center; /* Esto alineará verticalmente los elementos */
 }
+
 .form-input{
+
     padding: 1rem;
     border: 1px solid #666;
     border-radius: 5px;
     flex: 1;
     font-size: 1rem;
 }
+.form-group {
+    display: flex;
+    flex-grow: 1; /* Esto hará que el formulario ocupe el espacio disponible */
+    gap: 1rem;
+}
+
 .btn-sub{
     background-color: rgb(56, 199, 199);
     color: white;
@@ -301,6 +311,7 @@ body {
     text-decoration: none;
     transition: all 0.3s ease;
     font-size: 16px;
+    white-space: nowrap; /* Evita que el texto del botón se divida en varias líneas */
 }
 .btn-sub:hover{
     background-color: rgb(15, 31, 31);
