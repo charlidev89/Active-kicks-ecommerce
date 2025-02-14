@@ -385,6 +385,37 @@ body {
     border-radius: 2rem;
     height: 700px;
 }
+.container .row{
+    margin-bottom: 2rem;
+}
+/* Estilos específicos solo para las cards de la página de productos */
+.container.py-5 .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Imágenes solo dentro de las cards de productos */
+.container.py-5 .card .carousel-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Cuerpo de la card solo para productos */
+.container.py-5 .card .card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+
 
 
 
