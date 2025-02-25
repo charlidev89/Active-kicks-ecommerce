@@ -408,6 +408,9 @@ body {
 
 
 /* Imágenes solo dentro de las cards de productos */
+.container.py-5{
+    flex-direction:row;
+}
 .container.py-5 .card .carousel-item img {
     width: 100%;
     height: 300px;
@@ -421,6 +424,21 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+/*seccion  de filtrado productos*/
+.filter-section {
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.filter-title {
+    border-bottom: 2px solid #dee2e6;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-weight: 600;
 }
 
 
@@ -580,8 +598,8 @@ body {
   
     .form-group {
         display: flex;
-        flex-direction: column; /* Esto organizará los elementos verticalmente */
-        align-items: center; /* Esto centrará los elementos horizontalmente ya que es flexbox alk ser flexbox align centra horizontal si es column direction*/
+        flex-direction: column; /* Esto organiza los elementos verticalmente */
+        align-items: center; /* Esto centra los elementos horizontalmente ya que es flexbox alk ser flexbox align centra horizontal si es column direction*/
         gap: 1rem; 
         margin: 0 auto;
       
