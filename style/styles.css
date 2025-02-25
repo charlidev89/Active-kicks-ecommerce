@@ -6,6 +6,12 @@ img{
     max-width: 100%;
     height: auto;
 }
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
 
 body {
     overflow-x: hidden;  /* Agregamos esto */
@@ -449,7 +455,6 @@ body {
 
 
 
-
 @media (width <= 768px) {
    
     
@@ -465,12 +470,12 @@ body {
         
     }
     .nav {
-        justify-content: center;
+        justify-content:flex-end;
         align-content: center;
         justify-content: center;
-        font-size: 0.9rem;
-        gap: 20px; /* Reducir el gap */
-        padding: 0 1rem;
+        font-size: 0.8rem;
+        gap: 23px; /* Reducir el gap */
+        padding: 0 ;
         width: 100%
     }
     .logo{
@@ -517,6 +522,7 @@ body {
         font-size: 2.5rem; /* Reducir tamaño */
         margin-left: 0; /* Eliminar margen */
         text-align: center;
+        flex-direction: row;
     }
 
     .hero-slogan {
@@ -530,6 +536,15 @@ body {
         justify-content: center;
         
         
+    }
+    .imagen-beneficios{
+        width: 100%;
+    }
+    .img-zapas{
+        width: 100%;
+        max-width: 400px;
+        height: 500px;
+        margin: 0 auto;
     }
 
     /* Corregir la imagen */
