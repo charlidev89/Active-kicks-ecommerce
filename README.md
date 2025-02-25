@@ -1,5 +1,6 @@
 # ActiveKicks - E-commerce de Sneakers
-Podes ver el deploy actual del proyecton en el siguiente enlace 😊 
+Podes ver el deploy actual del proyecto en el siguiente enlace 😊 
+
 https://charlidev89.github.io/Active-kicks-ecommerce/
 
 ## Acerca del Proyecto
