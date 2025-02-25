@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title>ActiveKicks Ecommerce</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+
+<body>
+    
+    <div class="grid-container">
+        <header class="header">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="../images/Blue Orange Flat Illustrative Sneaker Store Logo.png" alt="logo"
+                        class="imagenlogo">
+                </div>
+                <nav class="nav">
+                    <a href="../index.html">Inicio</a>
+                    <a href="productos.html">Productos</a>
+                    <a href="#contacto">Contacto</a>
+                    <a href="#" class="boton-iniciar" data-bs-toggle="modal" data-bs-target="#loginModal">Iniciar</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+     <!-- Contenedor registro -->
+            <div class="container mt-5">
+                <div class="row justify-content-center mb-5">
+                    <!-- Columnas responsivas para todos los dispositivos -->
+                    <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+                        <!-- Card con bordes redondeados -->
+                        <div class="card rounded-5 ">
+                            <div class="card-header text-center">
+                                <h4 class="mb-0">Formulario de Registro</h4>
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <!-- Nombre -->
+                                    <div class="mb-3">
+                                        <label for="nombre" class="form-label">Nombre completo</label>
+                                        <input type="text" class="form-control" id="nombre"
+                                            placeholder="Ingresa tu nombre">
+                                    </div>
+
+                                    <!-- Email -->
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Correo electrónico</label>
+                                        <input type="email" class="form-control" id="email"
+                                            placeholder="Ingresa tu email">
+                                        <div class="form-text">Nunca compartiremos tu email con nadie más.</div>
+                                    </div>
+
+                                    <!-- Contraseña -->
+                                    <div class="mb-3">
+                                        <label for="password" class="form-label">Contraseña</label>
+                                        <input type="password" class="form-control" id="password"
+                                            placeholder="Crea una contraseña">
+                                    </div>
+
+                                    <!-- Confirmar Contraseña -->
+                                    <div class="mb-3">
+                                        <label for="confirmPassword" class="form-label">Confirmar contraseña</label>
+                                        <input type="password" class="form-control" id="confirmPassword"
+                                            placeholder="Confirma tu contraseña">
+                                    </div>
+
+                                    <!-- Seleccionar país -->
+                                    <div class="mb-3">
+                                        <label for="pais" class="form-label">País</label>
+                                        <select class="form-select" id="pais">
+                                            <option selected disabled>Selecciona tu país</option>
+                                            <option value="espana">España</option>
+                                            <option value="mexico">México</option>
+                                            <option value="argentina">Argentina</option>
+                                            <option value="colombia">Colombia</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- Términos y condiciones -->
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="terminos">
+                                        <label class="form-check-label" for="terminos">Acepto los términos y
+                                            condiciones</label>
+                                    </div>
+
+                                    <!-- Botón de registro con clase personalizada -->
+                                    <button type="submit" class="btn btn-primary personal w-100">Registrarse</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+     <!--footer  -->
+        <footer id="contacto" class="footer">
+            <div class="container">
+                <div class="row py-4">
+                    <div class="col-md-4 mb-3">
+                        <h5 class="mb-3">ActiveKicks</h5>
+                        <p>El único E-commerce exclusivamente de Sneakers, desde Argentina para el mundo 🌍</p>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <h5 class="mb-3">Contacto</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-geo-alt"></i> Dirección: Av. Corrientes 1234, CABA</li>
+                            <li><i class="bi bi-telephone"></i> Teléfono: +54 11 4567-8901</li>
+                            <li><i class="bi bi-envelope"></i> Email: info@activekicks.com.ar</li>
+                            <li><i class="bi bi-clock"></i> Horario: Lun-Vie 9:00-18:00</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <h5 class="mb-3">Síguenos</h5>
+                        <div class="social-links">
+                            <a href="#" class="me-2"><i class="bi bi-instagram"></i> Instagram</a>
+                            <a href="#" class="me-2"><i class="bi bi-facebook"></i> Facebook</a>
+                            <a href="#" class="me-2"><i class="bi bi-twitter"></i> Twitter</a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="text-center py-2">
+                    <p class="mb-0">ActiveKicks © 2025 Todos los derechos reservados</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal de inicio de sesión -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel">
+        <div class="modal-dialog modal-dialog-centered custom-width">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    <div class="welcome-text">Bienvenido</div>
+                    <div class="login-title">INICIAR SESIÓN</div>
+                    <div class="mt-4 mb-3">
+                        <label for="email" class="form-label fw-normal mb-1">Email</label>
+                        <input type="email" class="form-control py-2 rounded-2" id="email"
+                            placeholder="usuario@ejemplo.com" value="usuario@ejemplo.com" required>
+                    </div>
+                    <div class="mb-2">
+                        <label for="password" class="form-label fw-normal mb-1">Contraseña</label>
+                        <input type="password" class="form-control py-2 rounded-2" id="password" placeholder="••••••••"
+                            required>
+                    </div>
+                    <div class="d-flex mb-2 mt-1">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Recordarme</label>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                    </div>
+                    <div class="divider mt-2 mb-4"></div>
+                    <div class="text-center">
+                        <button class="login-btn py-2">Iniciar Sesión</button>
+                        <a href="#" class="text-decoration-none">
+                            <button class="register-btn py-2">Registrarse</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</body>
+
+</html>
