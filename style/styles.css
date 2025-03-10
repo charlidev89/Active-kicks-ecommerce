@@ -114,7 +114,7 @@ img {
 }
 
 .imagenlogo {
-    max-width: 25%;
+    max-width: 20%;
     display: block;
 }
 
@@ -216,7 +216,7 @@ img {
 
 .destacado-container {
     display: grid;
-    align-items: center;
+    align-items: start;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
     justify-content: center;
@@ -232,12 +232,14 @@ img {
     justify-content: center;
     max-width: 80%;
     padding: 0 2rem;
+    
 }
 
 .hero-text {
     display: flex;
     flex-direction: column;
     padding-right: 2rem;
+
 }
 
 .hero-titulo {
@@ -266,6 +268,10 @@ img {
     height: auto;
     border-radius: 1rem;
 }
+.carousel.slide.carousel-personalizado{
+ margin :auto;
+}
+    
 
 /* Animación de títulos */
 @keyframes fadeInUp {
@@ -665,6 +671,28 @@ img {
    MEDIA QUERIES
    ========================================================= */
 /* Escritorio pequeño y tablets */
+
+@media (width >= 992px) and (width < 1400px) {
+    
+    .nav {
+        gap: 20px;
+    }
+    
+    .nav-link {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+    
+    .header-container {
+        max-width: 95%;
+    }
+    
+    .nav a {
+        white-space: nowrap;
+        font-size: 14px;
+    }
+}
+
 @media (width >= 768px) and (width < 992px) {
     .navbar-expand-lg .navbar-collapse {
         display: flex !important;
@@ -704,6 +732,13 @@ img {
     .logo {
         z-index: 1040;
         position: relative;
+        padding: 5px;
+        max-width: 150px; /* Ajusta este valor según necesites */
+        display: inline-block;
+    }
+    div.logo{
+        padding:5px;
+        margin-right: 0%;
     }
 
     /* Ajustar el menú desplegado para que no cubra el botón */
@@ -715,9 +750,10 @@ img {
 /* Móviles */
 @media (width < 768px) {
     /* Ajustes de navegación para móviles */
+    
     .navbar-toggler {
         position: absolute;
-        right: -100px;
+        right: -70px;
         top: 50%;
         transform: translateY(5%);
         justify-content: center;
