@@ -1,7 +1,8 @@
 /* =========================================================
    RESETEO Y ESTILOS BASE
    ========================================================= */
-   html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -83,10 +84,11 @@ img {
 }
 
 .navbar-toggler {
-    position: absolute;
-    right: -100px;
-    top: 50%;
-    transform: translateY(10%);
+    position: relative; /* Cambia absolute por relative */
+    right: auto; /* Elimina posicionamiento negativo */
+    top: auto; /* Elimina posicionamiento negativo */
+    transform: none;
+    margin-left: auto; /* Esto lo alinea a la derecha */
 }
 
 .nav {
@@ -232,15 +234,22 @@ img {
     justify-content: center;
     max-width: 80%;
     padding: 0 2rem;
-    
+
 }
 
 .hero-text {
     display: flex;
     flex-direction: column;
     padding-right: 2rem;
+    padding-top:5rem; 
 
 }
+
+.hero-text.about-us {
+    padding-top: 2rem;
+
+}
+
 
 .hero-titulo {
     font-size: 4rem;
@@ -268,10 +277,12 @@ img {
     height: auto;
     border-radius: 1rem;
 }
-.carousel.slide.carousel-personalizado{
- margin :auto;
+
+.carousel.slide.carousel-personalizado {
+    margin: auto;
+    max-width: 450px;
 }
-    
+
 
 /* Animación de títulos */
 @keyframes fadeInUp {
@@ -279,6 +290,7 @@ img {
         opacity: 0;
         transform: translate3d(0, 100%, 0);
     }
+
     to {
         opacity: 1;
         transform: translate3d(0, 0, 0);
@@ -672,28 +684,28 @@ img {
    ========================================================= */
 /* Escritorio pequeño y tablets */
 
-@media (width >= 992px) and (width < 1400px) {
-    
+@media (width >=992px) and (width < 1400px) {
+
     .nav {
         gap: 20px;
     }
-    
+
     .nav-link {
         padding-left: 5px !important;
         padding-right: 5px !important;
     }
-    
+
     .header-container {
         max-width: 95%;
     }
-    
+
     .nav a {
         white-space: nowrap;
         font-size: 14px;
     }
 }
 
-@media (width >= 768px) and (width < 992px) {
+@media (width >=768px) and (width < 992px) {
     .navbar-expand-lg .navbar-collapse {
         display: flex !important;
         flex-flow: wrap;
@@ -702,6 +714,7 @@ img {
 
 /* Tablets y móviles */
 @media (width < 991.98px) {
+
     /* Ajustes de navegación para tablets y móviles */
     .navbar-collapse .navbar-nav.ms-auto {
         margin-left: 0 !important;
@@ -733,11 +746,13 @@ img {
         z-index: 1040;
         position: relative;
         padding: 5px;
-        max-width: 150px; /* Ajusta este valor según necesites */
+        max-width: 150px;
+        /* Ajusta este valor según necesites */
         display: inline-block;
     }
-    div.logo{
-        padding:5px;
+
+    div.logo {
+        padding: 5px;
         margin-right: 0%;
     }
 
@@ -750,13 +765,12 @@ img {
 /* Móviles */
 @media (width < 768px) {
     /* Ajustes de navegación para móviles */
-    
+
     .navbar-toggler {
-        position: absolute;
-        right: -70px;
-        top: 50%;
-        transform: translateY(5%);
-        justify-content: center;
+        position: relative;
+        right: auto;
+        margin-left: auto;
+        transform: none;
     }
 
     .navbar {
