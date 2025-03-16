@@ -1,11 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title>ActiveKicks Ecommerce</title>
+    <!-- Linkeo con css de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Linkeo con css  -->
+    <link rel="stylesheet" href="../style/style.css">
 </head>
+
 <body>
-    
+    <div class="grid-container">
+        <header class="header">
+            <div class="header-container container">
+                <nav class="navbar navbar-expand-lg">
+                    <a href="../index.html">
+                        <div class="logo">
+                            <img src="../images/Blue Orange Flat Illustrative Sneaker Store Logo.png" alt="logo"
+                                class="imagenlogo">
+                        </div>
+                    </a>
+
+                    <!-- Botón hamburguesa -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Contenido del menú que se colapsará en móviles -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="nav navbar-nav ms-auto">
+
+                            <a class="nav-link" href="productos.html">Productos</a>
+                            <a class="nav-link" href="about-us.html">Sobre Nosotros</a>
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                            <a class="nav-link boton-iniciar" href="#" data-bs-toggle="modal"
+                                data-bs-target="#loginModal">Iniciar</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+
+            <!-- Seccion destacada "HERO SECTION" -->
+            <section class="destacado-section">
+                <div class="destacado-container">
+                    <div class="hero-text">
+                        <h1 class="hero-titulo">Donaciones que Caminan lejos</h1>
+
+                        <p class="hero-slogan">"Da un paso por quien más lo necesita". <br><br> Tu donación transforma
+                            vidas. Colaboramos con organizaciones de confianza como Cáritas Argentina, Cruz Roja
+                            Argentina, Fundación Huerta Niño y Pilares, garantizando que cada par de zapatillas llegue a
+                            quienes realmente lo necesitan.
+                        
+                            <br><br> ¿Te sumas al movimiento?
+                        </p>
+
+                        <div class="hero-botones">
+                            <a href="#" class="btn1" data-bs-toggle="modal" data-bs-target="#loginModal">Quiero
+                                Donar</a>
+                        </div>
+                    </div>
+                    <!-- Carrousel con bootstrap personalizado" -->
+                    <div id="carouselExampleIndicators" class="carousel slide carousel-personalizado">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/images/voluntario/pexels-photo-6647004.jpeg" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/voluntario/2.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/voluntario/3.webp " class="d-block w-100" alt="...">
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+
+
+        <footer id="contacto" class="footer">
+            <div class="container">
+                <div class="row py-4">
+                    <div class="col-md-4 mb-3">
+                        <h5 class="mb-3">ActiveKicks</h5>
+                        <p>El único E-commerce exclusivamente de Sneakers, desde Argentina para el mundo 🌍</p>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <h5 class="mb-3">Contacto</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-geo-alt"></i> Dirección: Av. Corrientes 1234, CABA</li>
+                            <li><i class="bi bi-telephone"></i> Teléfono: +54 11 4567-8901</li>
+                            <li><i class="bi bi-envelope"></i> Email: info@activekicks.com.ar</li>
+                            <li><i class="bi bi-clock"></i> Horario: Lun-Vie 9:00-18:00</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <h5 class="mb-3">Síguenos</h5>
+                        <div class="social-links">
+                            <a href="#" class="me-2"><i class="bi bi-instagram"></i> Instagram</a>
+                            <a href="#" class="me-2"><i class="bi bi-facebook"></i> Facebook</a>
+                            <a href="#" class="me-2"><i class="bi bi-twitter"></i> Twitter</a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="text-center py-2">
+                    <p class="mb-0">ActiveKicks © 2025 Todos los derechos reservados</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- section login modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel">
+        <div class="modal-dialog modal-dialog-centered custom-width">
+            <div class="modal-content">
+                <div class="shape-background">
+                    <div class="background-shape-1"></div>
+                    <div class="background-shape-2"></div>
+                </div>
+                <div class="modal-body">
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+
+                    <div class="welcome-text">Bienvenido</div>
+                    <div class="login-title">INICIAR SESIÓN</div>
+
+                    <div class="mt-4 mb-3">
+                        <label for="email" class="form-label fw-normal mb-1">Email</label>
+                        <input type="email" class="form-control py-2 rounded-2" id="email"
+                            placeholder="usuario@ejemplo.com" value="usuario@ejemplo.com" required>
+                    </div>
+
+                    <div class="mb-2">
+                        <label for="password" class="form-label fw-normal mb-1">Contraseña</label>
+                        <input type="password" class="form-control py-2 rounded-2" id="password" placeholder="••••••••"
+                            required>
+                    </div>
+
+                    <div class="d-flex mb-2 mt-1">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">
+                                Recordarme
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                    </div>
+
+                    <div class="divider mt-2 mb-4"></div>
+
+                    <div class="text-center">
+                        <button class="login-btn py-2">Iniciar Sesión</button>
+
+                        <a href="registro.html" class="text-decoration-none">
+                            <button class="register-btn py-2">Registrarse</button>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Linkeo con JS de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Linkeo iconos  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </body>
+
 </html>

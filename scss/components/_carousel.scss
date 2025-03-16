@@ -1,0 +1,20 @@
+.carousel-personalizado {
+    max-width: 800px !important;
+    margin: 0 auto !important;
+    border-radius: $border-radius-xl;
+    overflow: hidden;
+    align-self: center !important;
+
+  
+  
+  }
+  
+  .carousel-indicators {
+    margin-bottom: 0;
+    [data-bs-target] {
+      width: 8px;
+      height: 8px;
+      border-radius: $border-radius-circle;
+      margin: 0 4px;
+    }
+  }

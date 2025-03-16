@@ -1,0 +1,73 @@
+.card {
+    margin-bottom: $spacing-lg;
+    transition: transform 0.2s;
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: $shadow-hover;
+    }
+    
+  }
+  
+  .price {
+    font-size: $font-size-large;
+    color: $color-success;
+    font-weight: bold;
+  }
+  
+  .img-zapas {
+    border-radius: $spacing-lg;
+    height: 700px;
+    
+    @include mobile {
+      width: 100%;
+      max-width: 400px;
+      height: 500px;
+      margin: 0 auto;
+    }
+  }
+  
+  .container.row {
+    margin-bottom: $spacing-lg;
+  }
+  
+  /* Estilos específicos para cards de productos */
+  .container.py-5 {
+    flex-direction: row;
+    
+    .card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      
+      .carousel-item img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
+      }
+      
+      .card-body {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
+  }
+  
+  /* Sección de filtrado productos */
+  .filter-section {
+    border-radius: $border-radius-medium;
+    background-color: $color-bg-lighter;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .filter-title {
+    border-bottom: 2px solid $color-border-light;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }

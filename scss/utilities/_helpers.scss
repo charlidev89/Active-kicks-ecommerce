@@ -1,0 +1,35 @@
+.rounded-5 {
+    border-radius: $border-radius-large !important;
+  }
+  .destacado-container,
+  .beneficios-container,
+  .features-container,
+  .sub,
+  .container,
+  .footer-container {
+    @include tablet {
+      width: 90% !important;
+      max-width: 90% !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      padding-left: $spacing-md !important;
+      padding-right: $spacing-md !important;
+      box-sizing: border-box !important;
+    }
+  }
+
+// Asegura que las imágenes no se desborden en tablets
+img {
+  @include tablet {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+// Mejora el centrado de elementos grid en tablets
+[class*="grid"] {
+  @include tablet {
+    justify-content: center;
+    align-items: center;
+  }
+}

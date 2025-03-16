@@ -1,0 +1,57 @@
+// Colores
+$color-primary: rgb(56, 199, 199);
+$color-primary-light: rgb(76, 212, 212);
+$color-primary-alpha: rgba(56, 199, 199, 0.7);
+$color-primary-alpha-light: rgba(56, 199, 199, 0.5);
+$color-dark: rgb(15, 31, 31);
+$color-black: rgb(0, 0, 0);
+$color-white: rgb(255, 255, 255);
+$color-text: #666;
+$color-text-dark: black;
+$color-text-light: rgb(118, 129, 129);
+$color-success: #2ecc71;
+$color-border: #e5e7eb;
+$color-bg-light: #f6fdfd;
+$color-bg-lighter: #f8f9fa;
+$color-border-light: #dee2e6;
+
+// Tamaños de fuente
+$font-size-base: 17px;
+$font-size-small: 0.9rem;
+$font-size-smaller: 0.8rem;
+$font-size-smallest: 14px;
+$font-size-medium: 1rem;
+$font-size-large: 1.25rem;
+$font-size-xl: 2.5rem;
+$font-size-xxl: 4rem;
+
+// Fuentes
+$font-family-base: "Inter", serif;
+
+// Bordes
+$border-radius-small: 5px;
+$border-radius-medium: 8px;
+$border-radius-large: 1rem;
+$border-radius-xl: 20px;
+$border-radius-xxl: 35px;
+$border-radius-circle: 50%;
+$border-radius-pill: 50px;
+
+// Sombras
+$shadow-default: 0px 4px 10px rgba(170, 169, 169, 0.2);
+$shadow-hover: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+// Espaciado
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 1.5rem;
+$spacing-lg: 2rem;
+$spacing-xl: 4rem;
+
+// Transiciones
+$transition-default: all 0.3s ease;
+
+// Breakpoints
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 992px;
+$breakpoint-desktop-small: 1400px;

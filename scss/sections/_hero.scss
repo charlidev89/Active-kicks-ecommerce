@@ -1,0 +1,162 @@
+.destacado {
+  &-section {
+    padding: $spacing-xl $spacing-lg;
+
+    @include mobile {
+      margin-top: 0;
+      display: flex;
+      flex-direction: column;
+      padding: $spacing-lg $spacing-sm;
+    }
+  }
+
+  &-container {
+    display: grid;
+    align-items: start;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 1200px;
+    padding: 0 $spacing-lg;
+    
+
+    @include mobile {
+      margin-top: 0;
+      grid-template-columns: 1fr;
+      margin: 0;
+      text-align: center;
+      gap: $spacing-lg;
+      padding: $spacing-sm;
+      max-width: 100%;
+      justify-items: center;
+    }
+    @include tablet {
+      max-width: 95%;
+      grid-template-columns: 1fr 1fr;
+      gap: $spacing-md;
+      padding: 0 $spacing-sm;
+      overflow: visible;
+    }
+  }
+
+  &-about {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 80%;
+    padding: 0 $spacing-lg;
+    @include tablet {
+      max-width: 95%;
+      grid-template-columns: 1fr 1fr;
+      gap: $spacing-md;
+    }
+  }
+}
+
+.hero {
+  &-text {
+    @include flex(column);
+    align-items: flex-start;
+    padding-right: $spacing-lg;
+    padding-top: 5rem;
+
+    &.about-us {
+      padding-top: $spacing-lg;
+    }
+
+    @include mobile {
+      margin-left: 0rem;
+      display: flex;
+      padding: 0 $spacing-sm;
+      align-items: center; 
+      text-align: center; 
+    }
+    @include tablet {
+      padding-right: $spacing-sm;
+      padding-top: 2rem;
+    }
+  }
+
+  &-titulo {
+    font-size: $font-size-xxl;
+    line-height: 1.2;
+    margin-bottom: $spacing-md;
+    margin-top: 0;
+    font-weight: 700;
+    color: $color-primary;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: fadeInUp 1s ease-out both;
+
+    @include mobile {
+      font-size: $font-size-xl;
+      margin-left: 0;
+      text-align: center;
+      flex-direction: row;
+      width: 100%;
+    }
+  }
+
+  &-slogan {
+    font-size: $font-size-large;
+    color: $color-text-light;
+    margin-bottom: $spacing-lg;
+
+    @include mobile {
+      margin-left: 0;
+      text-align: center;
+      width: 100%; 
+
+    }
+  }
+
+  &-botones {
+    margin-top: 60px;
+
+    @include mobile {
+      margin-left: 0;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+}
+
+.imagenportada {
+  height: auto;
+  border-radius: $border-radius-large;
+  display: block;
+
+  @include mobile {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: $spacing-md;
+  }
+  @include tablet {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+}
+
+.carousel.slide.carousel-personalizado {
+  margin: auto;
+  max-width: 450px;
+  margin-top: $spacing-md;
+}
+
+/* Animación de títulos */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

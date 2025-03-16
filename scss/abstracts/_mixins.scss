@@ -1,0 +1,46 @@
+// Flexbox
+@mixin flex($direction: row, $justify: center, $align: center, $wrap: nowrap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+  }
+  
+  // Hover con transformación
+  @mixin hover-transform($y: 5px) {
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+    
+    &:hover {
+      transform: translate(0px, $y);
+      -webkit-transform: translate(0px, $y);
+      -moz-transform: translate(0px, $y);
+    }
+  }
+  
+  // Media queries
+  @mixin mobile {
+    @media (width < $breakpoint-mobile) {
+      @content;
+    }
+  }
+  
+  @mixin tablet {
+    @media (width >= $breakpoint-mobile) and (width < $breakpoint-tablet) {
+      @content;
+    }
+  }
+  
+  @mixin tablet-and-below {
+    @media (width < $breakpoint-tablet) {
+      @content;
+    }
+  }
+  
+  @mixin desktop-small {
+    @media (width >= $breakpoint-tablet) and (width < $breakpoint-desktop-small) {
+      @content;
+    }
+  }
