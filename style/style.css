@@ -458,6 +458,15 @@ img {
   overflow: hidden;
   align-self: center !important;
 }
+.carousel-personalizado .carousel-item {
+  transition: opacity 0.5s ease-in-out;
+  position: absolute;
+  opacity: 0;
+}
+.carousel-personalizado .carousel-item.active {
+  position: relative;
+  opacity: 1;
+}
 
 .carousel-indicators {
   margin-bottom: 0;

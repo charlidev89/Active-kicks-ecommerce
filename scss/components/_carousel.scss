@@ -1,20 +1,30 @@
 .carousel-personalizado {
-    max-width: 800px !important;
-    margin: 0 auto !important;
-    border-radius: $border-radius-xl;
-    overflow: hidden;
-    align-self: center !important;
-
+  max-width: 800px !important;
+  margin: 0 auto !important;
+  border-radius: $border-radius-xl;
+  overflow: hidden;
+  align-self: center !important;
   
-  
-  }
-  
-  .carousel-indicators {
-    margin-bottom: 0;
-    [data-bs-target] {
-      width: 8px;
-      height: 8px;
-      border-radius: $border-radius-circle;
-      margin: 0 4px;
+  .carousel-item {
+    transition: opacity 0.5s ease-in-out;
+    position: absolute;
+    opacity: 0;
+    
+    &.active {
+      position: relative;
+      opacity: 1;
     }
   }
+}
+
+
+.carousel-indicators {
+  margin-bottom: 0;
+
+  [data-bs-target] {
+    width: 8px;
+    height: 8px;
+    border-radius: $border-radius-circle;
+    margin: 0 4px;
+  }
+}
