@@ -6,41 +6,28 @@
     font-size: $font-size-small;
     color: $color-text;
     
-    &-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: $spacing-sm;
+    .container {
+        max-width: 1200px;
     }
     
-    &-logo {
-      max-width: 120px;
-      margin-bottom: $spacing-sm;
+    h5 {
+        color: $color-primary;
+        font-weight: 600;
     }
     
-    &-links {
-      display: flex;
-      justify-content: center;
-      gap: $spacing-md;
-      margin-bottom: $spacing-sm;
-      flex-wrap: wrap;
-      
-      @include mobile {
-        flex-direction: column;
-        gap: $spacing-xs;
-      }
-      
-      a {
-        text-decoration: none;
-        color: $color-text;
-        transition: $transition-default;
-        
-        &:hover {
-          color: $color-primary;
+    .social-links {
+        a {
+            text-decoration: none;
+            color: $color-text;
+            transition: $transition-default;
+            
+            &:hover {
+                color: $color-primary;
+            }
         }
-      }
     }
     
-    &-copyright {
-      margin-top: $spacing-sm;
+    .list-unstyled li {
+        margin-bottom: $spacing-xs;
     }
-  }
+}
