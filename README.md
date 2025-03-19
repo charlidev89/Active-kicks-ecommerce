@@ -71,11 +71,5 @@ ActiveKicks rompe estas barreras para que personas con recursos limitados puedan
 - Filtros de productos con múltiples categorías
 - Diseño adaptable que funciona desde móviles hasta desktops
 - Sección de calzado solidario para donaciones y proyectos sociales
-## Características Técnicas Destacadas
 
-- Sistema de grid para layout principal
-- Componentes Bootstrap personalizados (carruseles, cards)
-- Animaciones sutiles para mejorar la experiencia de usuario
-- Filtros de productos con múltiples categorías
-- Diseño adaptable que funciona desde móviles hasta desktops
 
