@@ -26,8 +26,8 @@
                 <nav class="navbar navbar-expand-lg">
                     <a href="index.html">
                         <div class="logo ">
-                            <img src="images/Blue Orange Flat Illustrative Sneaker Store Logo.png" alt="logo"
-                                class="imagenlogo">
+                            <img src="images/Blue Orange Flat Illustrative Sneaker Store Logo.png"
+                                alt="logo en forma de zapatillas con alas " class="imagenlogo">
                         </div>
                     </a>
 
@@ -157,10 +157,11 @@
                 </div>
             </section>
 
+            <!-- Sección de video-->
             <section class="video">
                 <div class="container mt-5 mb-5">
                     <div class="row justify-content-center">
-                        <div class="col-lg-11  col-sm-12 col-xs-12">
+                        <div class="col-lg-10  col-sm-10 col-xs-12">
                             <!-- Contenedor de video  Bootstrap -->
                             <div class="video-container mx-auto  mt-5 mb-5">
                                 <video class="embed-responsive w-100 rounded shadow" autoplay muted loop controls>
@@ -173,13 +174,16 @@
                 </div>
 
             </section>
-            <section class="faqs mt-5 mb-5">
-                <div class="container mt-3"> 
+            <!-- Sección FAQS-->
+
+            <section class="faqs mt-5 mb-5 " id="faqs">
+                <div class="container mt-3">
                     <div class="row justify-content-center">
                         <!-- El acordeón ocupará 8 columnas de las 12 disponibles en Bootstrap -->
                         <div class="col-md-11 mt-5">
                             <h2 class="text-center mb-4 hero-titulo  ">FAQS</h2>
-                            <p class="text-center mb-4 mt-5 hero-slogan">Todo lo que necesitas saber sobre nuestras zapatillas de colección y usadas</p>
+                            <p class="text-center mb-4 mt-5 hero-slogan">Todo lo que necesitas saber sobre nuestras
+                                zapatillas de colección y usadas</p>
                             <div class="accordion mt-5" id="accordionExample">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
@@ -190,7 +194,7 @@
                                             colección?
                                         </button>
                                     </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                    <div id="collapseOne" class="accordion-collapse collapse"
                                         data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
                                             <strong>Verificamos rigurosamente cada par de zapatillas.</strong> En
@@ -392,12 +396,13 @@
                         <form action="#" method="#" class="form-group">
                             <input type="email" placeholder="Email" class="form-input">
                             <input type="text" placeholder="Nombre completo" class="form-input">
-                            <button type="submit" class="btn-sub">Subscribete</button>
+                            <button type="submit" class="btn-sub" data-bs-toggle="modal"
+                                data-bs-target="#subModal">Subscribete</button>
                         </form>
                     </div>
                 </div>
             </section>
-            
+
 
 
 
@@ -483,6 +488,31 @@
                         </a>
 
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section subscribe modal -->
+
+    <div class="modal" id="subModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header ">
+                    <h5 class="modal-title text-center w-100 hero-slogan            ">¡Bienvenido a la familia
+                        ActiveKicks!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body justify-content-center-!important ">
+                    <p>Gracias por suscribirte. <br> A partir de ahora recibirás acceso exclusivo a:
+                        <br>
+                        -Lanzamientos anticipados de sneakers limitadas <br>
+                        -Ofertas especiales solo para miembros <br>
+                        <br>
+                        ¡Mantente atento a tu correo para nuestro regalo de bienvenida!
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn1" data-bs-dismiss="modal">Entendido</button>
                 </div>
             </div>
         </div>
