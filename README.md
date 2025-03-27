@@ -1,4 +1,4 @@
-# ActiveKicks - PLataforma de Sneakers
+# ActiveKicks - Plataforma de Sneakers
 
 Puedes ver el deploy actual del proyecto en el siguiente enlace 😊 
 
