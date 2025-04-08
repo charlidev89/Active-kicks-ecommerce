@@ -17,12 +17,13 @@
   
   .img-zapas {
     border-radius: $spacing-lg;
-    height: 700px;
+    height: auto;
+    width: auto;
     
     @include mobile {
       width: 100%;
       max-width: 400px;
-      height: 500px;
+      height: auto;
       margin: 0 auto;
     }
   }
@@ -45,6 +46,8 @@
         height: 300px;
         object-fit: cover;
         object-position: center;
+
+     
       }
       
       .card-body {

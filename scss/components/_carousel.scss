@@ -28,3 +28,20 @@
     margin: 0 4px;
   }
 }
+
+// Añadir estas reglas específicas para el carousel en about-us
+.carousel.slide.carousel-personalizado.align-self-lg-end {
+  @include tablet-and-below {
+    width: 100%;
+    max-width: 100%;
+    margin: $spacing-sm auto;
+  }
+  
+  .carousel-inner img {
+    @include tablet-and-below {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}

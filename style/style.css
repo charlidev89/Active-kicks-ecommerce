@@ -24,13 +24,18 @@ img {
 }
 
 .grid-container {
-  min-height: 100%;
+  min-height: 100 vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr;
   grid-template-areas: "header" "main" "footer";
   width: 100%;
   max-width: 100vw;
+}
+@media (width < 992px) {
+  .grid-container {
+    overflow: visible;
+  }
 }
 
 .main {
@@ -179,15 +184,14 @@ img {
   max-width: 20%;
   display: block;
 }
-@media (width < 768px) {
-  .imagenlogo {
-    max-width: 120px;
-    margin: 0 auto;
-  }
-}
 @media (width < 992px) {
   .imagenlogo {
-    max-width: 150px;
+    max-width: 120px !important;
+  }
+}
+@media (width < 768px) {
+  .imagenlogo {
+    margin: 0 auto;
   }
 }
 
@@ -196,7 +200,7 @@ img {
     z-index: 1040;
     position: relative;
     padding: 5px;
-    max-width: 150px;
+    max-width: 120px !important;
     display: inline-block;
   }
 }
@@ -373,13 +377,14 @@ img {
 
 .img-zapas {
   border-radius: 2rem;
-  height: 700px;
+  height: auto;
+  width: auto;
 }
 @media (width < 768px) {
   .img-zapas {
     width: 100%;
     max-width: 400px;
-    height: 500px;
+    height: auto;
     margin: 0 auto;
   }
 }
@@ -451,6 +456,21 @@ img {
   height: 8px;
   border-radius: 50%;
   margin: 0 4px;
+}
+
+@media (width < 992px) {
+  .carousel.slide.carousel-personalizado.align-self-lg-end {
+    width: 100%;
+    max-width: 100%;
+    margin: 1rem auto;
+  }
+}
+@media (width < 992px) {
+  .carousel.slide.carousel-personalizado.align-self-lg-end .carousel-inner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 }
 
 .form-control {
@@ -605,10 +625,10 @@ img {
 @media (width >= 768px) and (width < 992px) {
   .destacado-container {
     max-width: 95%;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1.5rem;
     padding: 0 1rem;
-    overflow: visible;
+    overflow: hidden;
   }
 }
 .destacado-about {
@@ -654,6 +674,10 @@ img {
   .hero-text {
     padding-right: 1rem;
     padding-top: 2rem;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
   }
 }
 .hero-titulo {
@@ -673,6 +697,12 @@ img {
     margin-left: 0;
     text-align: center;
     flex-direction: row;
+    width: 100%;
+  }
+}
+@media (width >= 768px) and (width < 992px) {
+  .hero-titulo {
+    text-align: center;
     width: 100%;
   }
 }
@@ -726,6 +756,18 @@ img {
   max-width: 450px;
   margin-top: 1.5rem;
 }
+@media (width >= 768px) and (width < 992px) {
+  .carousel.slide.carousel-personalizado {
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+.carousel.slide.carousel-personalizado .carousel-inner img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 
 /* Animación de títulos */
 @keyframes fadeInUp {
@@ -738,6 +780,33 @@ img {
     transform: translate3d(0, 0, 0);
   }
 }
+@media (width < 992px) {
+  .destacado-section.about-us {
+    padding: 2rem 1rem;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .destacado-section.about-us {
+    overflow-x: hidden;
+    width: 100%;
+  }
+}
+@media (width < 992px) {
+  .destacado-section.about-us .hero-text.about-us {
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+  }
+}
+@media (width < 992px) {
+  .destacado-section.about-us .hero-slogan.about-us {
+    text-align: center;
+  }
+}
+
 .features-section {
   background-color: #f6fdfd;
   padding: 4rem 0;
@@ -803,6 +872,13 @@ img {
     width: 100%;
   }
 }
+@media (width < 992px) {
+  .item-feature {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    min-height: auto;
+  }
+}
 
 .subtitulo {
   color: rgb(56, 199, 199);
@@ -845,6 +921,16 @@ img {
     margin: 4rem 0 1.5rem;
   }
 }
+@media (width >= 768px) and (width < 992px) {
+  .beneficios-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 100%;
+    margin: 4rem 0 1.5rem;
+  }
+}
 @media (width < 768px) {
   .beneficios-text {
     margin-left: 0;
@@ -873,6 +959,32 @@ img {
     display: block;
     order: 1;
     margin: 0 auto 1.5rem;
+  }
+}
+
+.beneficios-section.about {
+  width: 100%;
+}
+@media (width < 992px) {
+  .beneficios-section.about {
+    padding: 0 1rem;
+    margin-bottom: 4rem;
+    overflow: visible;
+  }
+}
+@media (width < 992px) {
+  .beneficios-section.about .beneficios-container {
+    margin-top: 2rem;
+    gap: 2rem;
+  }
+}
+@media (width < 992px) {
+  .beneficios-section.about .features-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
   }
 }
 

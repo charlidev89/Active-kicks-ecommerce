@@ -32,10 +32,11 @@
     }
     @include tablet {
       max-width: 95%;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr  ;
       gap: $spacing-md;
       padding: 0 $spacing-sm;
-      overflow: visible;
+      overflow: hidden;   
+      
     }
   }
 
@@ -76,6 +77,10 @@
     @include tablet {
       padding-right: $spacing-sm;
       padding-top: 2rem;
+      text-align: center;       // Añadir esta línea
+      align-items: center;      // Añadir esta línea
+      margin: 0 auto;           // Añadir esta línea
+      width: 100%;       
     }
   }
 
@@ -96,7 +101,13 @@
       text-align: center;
       flex-direction: row;
       width: 100%;
+      
     }
+    @include tablet {           // Añadir este bloque
+      text-align: center;
+      width: 100%;
+    }
+    
   }
 
   &-slogan {
@@ -146,6 +157,19 @@
   margin: auto;
   max-width: 450px;
   margin-top: $spacing-md;
+
+  @include tablet {
+    max-width: 100%; // Asegura que no supere el ancho del contenedor padre
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  // Asegúrate de que las imágenes dentro del carousel se ajusten correctamente
+  .carousel-inner img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 }
 
 /* Animación de títulos */
@@ -158,5 +182,33 @@
   to {
     opacity: 1;
     transform: translate3d(0, 0, 0);
+  }
+}
+.destacado-section.about-us {
+  @include tablet-and-below {
+    padding: $spacing-lg $spacing-sm;
+    overflow: hidden; // Cambia de visible a hidden
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  // Añade una media query específica para 1024px
+  @media (max-width: 1024px) {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  .hero-text.about-us {
+    @include tablet-and-below {
+      padding: $spacing-sm 0;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  
+  .hero-slogan.about-us {
+    @include tablet-and-below {
+      text-align: center;
+    }
   }
 }

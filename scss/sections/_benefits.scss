@@ -18,6 +18,14 @@
         max-width: 100%;
         margin: $spacing-xl 0 $spacing-md;
       }
+      @include tablet {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: $spacing-lg;
+        padding: $spacing-lg;
+        max-width: 100%;
+        margin: $spacing-xl 0 $spacing-md;
+      }
     }
     
     &-text {
@@ -50,3 +58,31 @@
       margin: 0 auto $spacing-md;
     }
   }
+
+  // Añadir estas reglas específicas para about
+.beneficios-section.about {
+  width: 100%;
+  
+  @include tablet-and-below {
+    padding: 0 $spacing-sm;
+    margin-bottom: $spacing-xl;
+    overflow: visible;
+  }
+  
+  .beneficios-container {
+    @include tablet-and-below {
+      margin-top: $spacing-lg; // Reducir de 150px a un valor razonable
+      gap: $spacing-lg;
+    }
+  }
+  
+  .features-container {
+    @include tablet-and-below {
+      grid-template-columns: 1fr;
+      gap: $spacing-md;
+      width: 100%;
+      max-width: 100%;
+      padding: 0;
+    }
+  }
+}

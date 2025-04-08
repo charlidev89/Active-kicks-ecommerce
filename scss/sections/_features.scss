@@ -24,6 +24,7 @@
         margin: 0;
          padding: $spacing-sm $spacing-md;
       }
+      
     }
   }
   
@@ -48,6 +49,11 @@
       padding: $spacing-sm;
       margin: auto;
       width: 100%;
+    }
+    @include tablet-and-below {
+      width: 100%;
+      margin-bottom: $spacing-md;
+      min-height: auto;
     }
   }
   
