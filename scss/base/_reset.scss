@@ -1,16 +1,9 @@
 html,
 body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  overflow-x: hidden;
-}
-
-body {
   font-family: $font-family-base;
   font-size: $font-size-base;
   background-color: $color-white;
-  overflow-x: hidden;
+  overflow-x: visible;
   width: 100%;
   max-width: 100%;
   margin: 0;
