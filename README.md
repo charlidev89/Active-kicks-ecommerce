@@ -6,11 +6,11 @@ https://charlidev89.github.io/Active-kicks-ecommerce/
 
 ## Acerca del Proyecto
 
-ActiveKicks es el primer e-commerce exclusivamente dedicado a la compra y venta de zapatillas/sneakers, con un enfoque especial en zapatillas usadas y de colección.
+ActiveKicks es una plataforma exclusivamente dedicado a la compra y venta de zapatillas/sneakers, con un enfoque especial en zapatillas usadas y de colección, donde se podrá realizar remates y sorteos
 
 ### Historia del Proyecto
 
-El proyecto nace al identificar una necesidad clara en el mercado: actualmente no existe un e-commerce especializado exclusivamente en zapatillas usadas. Las plataformas actuales presentan varios problemas:
+El proyecto nace al identificar una necesidad clara en el mercado: actualmente no existe una plataforma  dedicada exclusivamente en zapatillas usadas. Las plataformas actuales presentan varios problemas:
 
 - Sistemas de filtrado poco detallados para las necesidades específicas de los compradores de sneakers
 - Comisiones de venta excesivamente altas
